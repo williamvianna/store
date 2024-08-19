@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-08-19T14:32:13.917018" rpa="false" schemaversion="5">
+<suite id="s1" name="compraTest" source="C:\william\qA\robot\store\tests\compraTest.robot">
+<test id="s1-t1" name="ExcluirProduto" line="7">
+<kw name="Adicionar item no carrinho de compras" owner="purchaseKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:32:14.203139" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-19T14:32:14.203139" elapsed="3.718389"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-19T14:32:17.921528" elapsed="0.042427"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:32:17.965955" level="INFO">Clicking link 'Laptops'.</msg>
+<arg>Laptops</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:32:17.964956" elapsed="0.169592"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>link=MacBook Pro</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-19T14:32:18.134548" elapsed="0.697934"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:32:18.833482" level="INFO">Clicking link 'MacBook Pro'.</msg>
+<arg>MacBook Pro</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:32:18.832482" elapsed="0.503134"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[2]//a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-19T14:32:19.336608" elapsed="0.705389"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:32:20.043071" level="INFO">Clicking element 'xpath=//div[2]//a'.</msg>
+<arg>xpath=//div[2]//a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:32:20.043071" elapsed="0.113857"/>
+</kw>
+<kw name="Alert Should Be Present" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:32:20.156928" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2024-08-19T14:32:20.156928" elapsed="0.520189"/>
+</kw>
+<doc>Adiciona um MacBook Pro ao carrinho de compras na DemoBlaze.</doc>
+<status status="PASS" start="2024-08-19T14:32:14.202127" elapsed="6.474990"/>
+</kw>
+<kw name="Excluir item no carrinho de compras" owner="purchaseKeywords">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:32:20.678787" level="INFO">Clicking link 'Cart'.</msg>
+<arg>Cart</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:32:20.678787" elapsed="0.516177"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>link=Delete</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-19T14:32:21.194964" elapsed="0.950683"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-08-19T14:32:22.146715" level="INFO">Clicking link 'Delete'.</msg>
+<arg>Delete</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-19T14:32:22.145647" elapsed="0.129755"/>
+</kw>
+<doc>Exclui um item no carrinho.</doc>
+<status status="PASS" start="2024-08-19T14:32:20.678787" elapsed="1.596615"/>
+</kw>
+<tag>excluir</tag>
+<status status="PASS" start="2024-08-19T14:32:14.201396" elapsed="8.075001"/>
+</test>
+<doc>Teste de compra na DemoBlaze</doc>
+<status status="PASS" start="2024-08-19T14:32:13.919084" elapsed="8.359313"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">excluir</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="compraTest">compraTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
